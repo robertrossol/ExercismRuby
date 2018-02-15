@@ -8,6 +8,7 @@ class Raindrops
     drops += 'Pling' if (num % 3).zero?
     drops += 'Plang' if (num % 5).zero?
     drops += 'Plong' if (num % 7).zero?
+    # converts the input number to string and passes that through if 3, 5, and 7 aren't multiples
     drops = num.to_s if drops == ''
     drops
   end
